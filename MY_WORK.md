@@ -256,7 +256,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Busy waiting means a CPU keeps checking the empty ready queue again and again, so it wastes CPU time. In my starter output, , which showed how many useless checks happened. A semaphore fixes this because it counts the processes in the queue, and a CPU that finds no process sleeps on acquire() until add() calls release(). After I used the semaphore, the busy-waiting polls became 0, and the CPUs only wake up when there is real work.]
 
 ## Question 4: Where can synchronization concepts be applied in real-world applications?
 
