@@ -321,7 +321,7 @@ Verification block of **my final version**:
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[> A critical section is the part of the code where threads use shared data, so only one thread should enter it at a time. In my code, these are the ready queue methods and the three counters. I used one lock for the queue and a separate lock for each counter, because the counters are independent and threads do not have to wait for each other. One lock for everything is simpler, but it makes the threads wait more.]
 
 | Critical section (variable / method) | Lock used | Why it needs protection |
 |---|---|---|
