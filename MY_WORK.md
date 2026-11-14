@@ -298,7 +298,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[In my starter output the verification block showed a race condition. For example, the context switches were expected 37 but observed 29, and the completed processes were expected 20 but observed 17 Also, four CPUs picked the same process, P1, at the same time, because they all read the head of the queue before it was removed. This happened because the threads read and wrote the shared data without a lock, so some updates were lost. The program also did not finish, and the watchdog stopped it after 27 seconds]
 
 Verification block of the **original starter**:
 ```
