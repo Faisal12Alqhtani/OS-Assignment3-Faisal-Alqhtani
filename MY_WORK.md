@@ -336,7 +336,7 @@ Verification block of **my final version**:
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[he hardest challenge for me was Feature 3, the semaphore. At first, I did not understand why the CPUs must wait before taking a process, and my program got stuck at the end because some CPUs were still waiting. I fixed this by making the semaphore start at 0, adding a release when a process is added to the queue, and releasing one permit for each CPU when the last process finishes. After that, the CPUs stopped correctly and the busy-waiting polls became 0. I ran the program many times to make sure the verification always showed]
 
 ## Question 4: Classical Problems and Deadlock
 
