@@ -248,7 +248,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[A critical section is a part of the code where threads use shared data, so only one thread should be inside it at a time. In my code, the critical sections are the ready queue operations (add, poll, processOf, snapshot) and the three counters. I used one lock for the ready queue, and one separate lock for each counter, because the counters are independent and threads do not need to wait for each other. A single lock for everything is simpler, but it makes the threads wait more than needed. I made the locks small and put only the shared data inside lock() and unlock(), and I printed the messages outside the lock.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
