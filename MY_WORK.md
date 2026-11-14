@@ -264,7 +264,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Synchronization is used in many real applications where several things share the same data. In banking, locks make sure two transactions do not change the same account balance at the same time. In ticket booking, they stop two people from booking the same seat. Operating systems use them when many processes share files, memory, or a printer queue. Web servers and databases also use them to handle many users at once without losing or mixing data. Semaphores are useful in a producer-consumer system, like a print queue, where workers wait until a job is available, just like my CPUs waited for a process.]
 
 ### Optional: What would you like to learn more about?
 
