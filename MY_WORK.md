@@ -240,7 +240,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[> In this assignment, I learned that threads can make mistakes when they use the same data at the same time. In the starter code, the verification numbers did not match because some updates were lost. I fixed this with a lock, so only one thread changes the data at a time. I also used a semaphore so the CPUs sleep instead of checking the queue again and again. The hardest part was stopping the CPUs at the end so the program does not hang.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
