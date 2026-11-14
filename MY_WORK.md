@@ -344,7 +344,7 @@ Verification block of **my final version**:
 
 > 💡 **TIP:** Recall the bounded-buffer solution of the slides (`empty`, `full`, `mutex`) and the order of `wait()` calls in the producer and the consumer. For the deadlock, think about a producer that holds the mutex while waiting for a free slot that only a consumer (who needs the mutex) can create.
 
-**Your Answer:** *(3-5 sentences)*
+**Your Answer:** *> My program is like the producer-consumer problem: `add()` puts processes in the queue, and the CPUs take them out, and the semaphore counts the processes in the queue. A deadlock happens when threads wait for each other forever. In my code, it could happen if a CPU waited on the semaphore while holding the queue lock. I avoided it by calling `acquire()` outside the lock, and by waking all the CPUs at the end.*
 
 **Classical problem and roles**:
 [Name the problem; who is the producer, who is the consumer?]
